@@ -4,12 +4,13 @@ import './App.css';
 function App() {
     const [players, setPlayers] = useState([]);
     const [loading, setLoading] = useState(true);
+    const apiURL = import.meta.env.VITE_LIFEUP_API;
 
     // 🔄 Gọi API lấy danh sách người chơi
     useEffect(() => {
         const fetchPlayers = async () => {
             try {
-                const res = await fetch('http://localhost:10000/characters');
+                const res = await fetch(`${apiURL}/characters`);
                 const data = await res.json();
                 setPlayers(data);
             } catch (err) {
