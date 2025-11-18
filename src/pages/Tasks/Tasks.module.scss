@@ -1,0 +1,67 @@
+// .tasks {
+//     width: 100%;
+//     height: 100%;
+//     background:
+//         url('https://i.pinimg.com/1200x/cc/6f/71/cc6f71ac0bef33ec288b4fe93775f832.jpg')
+//             center center / cover no-repeat;
+// }
+
+.container {
+  text-align: center;
+  color: #fff;
+  background-color: #0b0b0b;
+  min-height: 100vh;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+  color: #61dafb;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ffd700;
+}
+
+
+.btn-group {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.done-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.undo-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-card {
+  
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 12px;
+  border-left: 6px solid #4caf50;
+} 
