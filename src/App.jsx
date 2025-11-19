@@ -5,6 +5,7 @@ import Tasks from './pages/Tasks';
 import Players from './pages/Players';
 import NotFound from './pages/NotFound';
 import Layout from './layouts/MainLayout';
+import Items from './pages/Items';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path="tasks" element={<Tasks />} />
                     <Route path="players" element={<Players />} />
+                    <Route path="items" element={<Items />} />
                 </Route>
 
                 <Route path="*" element={<NotFound />} />

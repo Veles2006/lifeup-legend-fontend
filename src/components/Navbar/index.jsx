@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import classNames from 'classnames/bind';
 import styles from './Navbar.module.scss';
 import { useState } from "react";
@@ -7,6 +7,7 @@ const cx = classNames.bind(styles);
 
 function Navbar() {
     const [isBar, setIsBar] = useState(true)
+    const location = useLocation();
 
     const navbar = [
         {
@@ -27,7 +28,7 @@ function Navbar() {
         {
             id: 4,
             content: 'items',
-            link: 'tasks',
+            link: 'items',
         },
         {
             id: 5,
@@ -41,7 +42,7 @@ function Navbar() {
             <div className={cx('navbar')}>
                 <ul className={cx('navbar-list')}>
                     {isBar === true ? navbar.map((item, idx) => (
-                        <li key={idx} className={cx('navbar-list__item')}>
+                        <li key={idx} className={cx('navbar-list__item', {active: location.pathname === `/${item.link}`})}>
                             <Link to={item.link}>{item.content}</Link>
                         </li>
                     )) : <li className={cx('navbar-list__item')} onClick={() => setIsBar(true)}><Link>...</Link></li>}

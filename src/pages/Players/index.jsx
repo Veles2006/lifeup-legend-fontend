@@ -1,7 +1,11 @@
 function Players() {
     return (
-        <div>
-            <h3>player</h3>
+        <div style={{
+                width: '100%',
+                height: '100%',
+                background:
+                    "url('https://i.pinimg.com/736x/40/27/53/4027535e0e4594bd5ead4c2a4b30f24d.jpg') center center / cover no-repeat",
+            }}>
         </div>
     );
 }
