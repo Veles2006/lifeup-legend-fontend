@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://lifeup-legend-backend.onrender.com",
 });
 
 // Nếu có token trong localStorage thì tự gắn vào header
