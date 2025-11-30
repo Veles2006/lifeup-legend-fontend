@@ -1,4 +1,4 @@
-function Players() {
+function User() {
     return (
         <div style={{
                 width: '100%',
@@ -10,7 +10,7 @@ function Players() {
     );
 }
 
-export default Players;
+export default User;
 // const [players, setPlayers] = useState([]);
 
 // const [loadingPlayers, setLoadingPlayers] = useState(true);
